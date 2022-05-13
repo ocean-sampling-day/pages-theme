@@ -1,14 +1,12 @@
 title: OSD
 author: Rory Meyer
-url: https://data.ocean-sampling-day.org/ # root address of the site 
+url: https://data.ocean-sampling-day.org/ # root address of the site
+baseurl: {{ site.baseurl }}
 description: > # description of the site (multiple lines allowed)
   OSD + ROCrates
 
 permalink: /:slug
-
-# favicon: "./logo.png" # relative path to site's favicon
-
-#theme: moonwalk # if you are using GitHub Pages, change it to remote_theme: abhinavs/moonwalk
+  
 remote_theme: abhinavs/moonwalk
 
 theme_config:
