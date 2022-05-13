@@ -1,0 +1,34 @@
+--- 
+title: Ocean Sampling Day
+layout: default
+---
+<!--
+  Author: rory.meyer@vliz.be
+  This is the template for the OSD ro-crates. This index.html file is used as the default
+  entry point for the github pages and inherits all the styling from the template
+  jekyll project this was forked from. 
+
+  The jekyll building tool would need to cp/mv the README.md and ro-crate-preview.html
+  files from the OSD project into the correct paths for this to work.
+-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title> 
+  </head>
+  <header>
+
+    {% capture my_include %}{% include_relative README.md %}{% endcapture %} 
+    {{ my_include | markdownify }} 
+
+  </header>
+  <body>
+    <section>
+
+      {% include_relative ro-crate-preview.html %}
+
+    </section> 
+  </body>
+</html>
