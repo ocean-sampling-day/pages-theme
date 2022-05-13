@@ -1,7 +1,7 @@
 title: OSD
 author: Rory Meyer
 url: https://data.ocean-sampling-day.org/ # root address of the site
-baseurl: {{ site.baseurl }}
+baseurl: OSD2019
 description: > # description of the site (multiple lines allowed)
   OSD + ROCrates
 
